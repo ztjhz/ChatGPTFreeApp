@@ -4,10 +4,12 @@ import useStore from '@store/store';
 
 import PopupModal from '@components/PopupModal';
 import SettingIcon from '@icon/SettingIcon';
-import ThemeSwitcher from '@components/Menu/MenuOptions/ThemeSwitcher';
 import LanguageSelector from '@components/LanguageSelector';
+import ThemeSwitcher from '@components/Menu/MenuOptions/ThemeSwitcher';
 import AutoTitleToggle from './AutoTitleToggle';
 import PromptLibraryMenu from '@components/PromptLibraryMenu';
+import ClearConversation from './ClearConversation';
+import ImportExportChat from '@components/ImportExportChat';
 
 const SettingsMenu = () => {
   const { t } = useTranslation();
@@ -38,6 +40,8 @@ const SettingsMenu = () => {
             <LanguageSelector />
             <ThemeSwitcher />
             <AutoTitleToggle />
+            <ClearConversation />
+            <ImportExportChat />
             <PromptLibraryMenu />
           </div>
         </PopupModal>
